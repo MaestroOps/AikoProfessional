@@ -19,8 +19,8 @@
       </a>
       <button class="menu-toggle" aria-expanded="false" aria-controls="site-menu" aria-label="Open menu"><span></span><span></span></button>
       <div class="nav-links" id="site-menu">
+        <a href="#results">Results</a>
         <a href="#services">Services</a>
-        <a href="#approach">How we help</a>
         <a href="#about">About</a>
         <a class="nav-cta" href="#contact">Let's talk</a>
       </div>
@@ -35,8 +35,8 @@
           <h1>Running your business should <em>feel lighter.</em></h1>
           <p class="hero-text">We take the busy work off your plate, so you can spend more time on the work that actually moves your business forward.</p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#contact">Let’s talk <span>↗</span></a>
-            <a class="text-link" href="#services">See what we handle <span>↓</span></a>
+            <a class="button button-primary" href="#contact">Let's talk <span>↗</span></a>
+            <a class="text-link" href="#services">Explore what we handle <span>↓</span></a>
           </div>
           <div class="hero-proof">
             <div><strong>Admin</strong><span>organized</span></div>
@@ -45,9 +45,9 @@
           </div>
         </div>
 
-        <div class="hero-visual reveal delay-1" aria-label="Aiko operations support visual">
+        <div class="hero-visual reveal delay-1" aria-label="Interactive operations support visual">
           <div class="visual-shell">
-            <div class="visual-top"><span>AIKO / OPERATIONS</span><span class="live-dot">●</span></div>
+            <div class="visual-top"><span>AIKO / OPERATIONS</span><span class="live-dot">● LIVE</span></div>
             <div class="flow-line"><span class="flow-dot dot-1"></span><span class="flow-dot dot-2"></span><span class="flow-dot dot-3"></span></div>
             <div class="task task-one"><span class="task-icon">✦</span><div><b>Inbox</b><small>Handled</small></div><strong>✓</strong></div>
             <div class="task task-two"><span class="task-icon">◫</span><div><b>Bookings</b><small>Up to date</small></div><strong>✓</strong></div>
@@ -58,11 +58,18 @@
       </div>
     </section>
 
-    <section class="statement section-sm">
-      <div class="container statement-grid reveal">
-        <p class="eyebrow">The Aiko idea</p>
-        <h2>Business, <em>made lighter.</em></h2>
-        <p>Small businesses don't need more things to manage. They need the right things handled.</p>
+    <section class="results section-sm" id="results">
+      <div class="container">
+        <div class="results-head reveal">
+          <div><p class="eyebrow"><span></span> Results that matter</p><h2>Support should <em>change something.</em></h2></div>
+          <p>Results from an anonymised client engagement. The figures show what focused operational support helped achieve in one real business.</p>
+        </div>
+        <div class="stats-grid">
+          <article class="stat-card reveal"><span class="stat-label">First-response time</span><strong data-count="1" data-prefix="&lt; " data-suffix=" hr">&lt; 1 hr</strong><p>Customer enquiries brought down to under an hour.</p></article>
+          <article class="stat-card reveal delay-1"><span class="stat-label">Monthly cancellations</span><strong><span class="strike">10+</span> <span class="arrow">→</span> &lt;5</strong><p>Monthly cancellations reduced from 10+ to fewer than 5.</p></article>
+          <article class="stat-card stat-card-accent reveal delay-2"><span class="stat-label">Client retention</span><strong data-count="72" data-suffix="%">20% → 72%</strong><p>Retention increased from 20% to 72%.</p></article>
+          <article class="stat-card stat-card-dark reveal"><span class="stat-label">Revenue</span><strong data-count="92" data-prefix="+" data-suffix="%">+92%</strong><p>Increase in revenue during the engagement.</p></article>
+        </div>
       </div>
     </section>
 
@@ -70,15 +77,33 @@
       <div class="container">
         <div class="section-heading reveal">
           <div><p class="eyebrow"><span></span> What we handle</p><h2>The work behind <em>your work.</em></h2></div>
-          <p>From everyday admin to the operational details that quietly eat into your day, Aiko keeps the moving parts moving.</p>
+          <p>Click a service to see the kind of work that can move off your desk.</p>
         </div>
         <div class="service-grid">
-          <article class="service-card reveal"><span class="service-no">01</span><h3>Admin & Organization</h3><p>Inbox management, documentation, data entry, file organization and the routine tasks that keep the business in order.</p><span class="service-tag">Get organized</span></article>
-          <article class="service-card reveal delay-1"><span class="service-no">02</span><h3>Scheduling & Bookings</h3><p>Calendars, appointments, bookings and follow-ups handled carefully so you don't have to keep checking.</p><span class="service-tag">Keep things moving</span></article>
-          <article class="service-card reveal delay-2"><span class="service-no">03</span><h3>Customer Support</h3><p>Clear, timely and human communication that helps customers feel heard while protecting your time.</p><span class="service-tag">Look after customers</span></article>
-          <article class="service-card reveal"><span class="service-no">04</span><h3>Operations Support</h3><p>Day-to-day coordination, task management and practical support for the processes that keep your business running.</p><span class="service-tag">Keep operations moving</span></article>
-          <article class="service-card reveal delay-1"><span class="service-no">05</span><h3>Workflow Improvement</h3><p>We look for repetitive, messy or unnecessary steps and help make the way work gets done simpler.</p><span class="service-tag">Work smarter</span></article>
-          <article class="service-card service-card-dark reveal delay-2"><span class="service-no">06</span><h3>Problem Solving</h3><p>When something small becomes a recurring headache, we investigate, figure it out and help get it handled.</p><span class="service-tag">Find a way forward</span></article>
+          <button class="service-card reveal" type="button" aria-expanded="false">
+            <span class="service-no">01</span><span class="service-icon">✦</span><h3>Admin & Organization</h3><p>Inbox management, documentation, data entry and file organization.</p><span class="service-more">Explore <b>+</b></span>
+            <span class="service-detail">Inbox cleanup · Data entry · Documents · File organization · Routine admin</span>
+          </button>
+          <button class="service-card reveal delay-1" type="button" aria-expanded="false">
+            <span class="service-no">02</span><span class="service-icon">◫</span><h3>Scheduling & Bookings</h3><p>Calendars, appointments, bookings and follow-ups handled carefully.</p><span class="service-more">Explore <b>+</b></span>
+            <span class="service-detail">Calendar management · Appointment setting · Booking coordination · Reminders · Follow-ups</span>
+          </button>
+          <button class="service-card reveal delay-2" type="button" aria-expanded="false">
+            <span class="service-no">03</span><span class="service-icon">◌</span><h3>Customer Support</h3><p>Clear, timely and human communication that protects your time.</p><span class="service-more">Explore <b>+</b></span>
+            <span class="service-detail">Email support · Customer enquiries · Responses · Follow-ups · Service coordination</span>
+          </button>
+          <button class="service-card reveal" type="button" aria-expanded="false">
+            <span class="service-no">04</span><span class="service-icon">↗</span><h3>Operations Support</h3><p>Day-to-day coordination and practical support for business processes.</p><span class="service-more">Explore <b>+</b></span>
+            <span class="service-detail">Task coordination · Process tracking · Documentation · Admin support · Day-to-day operations</span>
+          </button>
+          <button class="service-card reveal delay-1" type="button" aria-expanded="false">
+            <span class="service-no">05</span><span class="service-icon">⌁</span><h3>Workflow Improvement</h3><p>Repetitive or messy processes made simpler and easier to manage.</p><span class="service-more">Explore <b>+</b></span>
+            <span class="service-detail">Process review · Simplification · Templates · Automation opportunities · Better handoffs</span>
+          </button>
+          <button class="service-card service-card-dark reveal delay-2" type="button" aria-expanded="false">
+            <span class="service-no">06</span><span class="service-icon">?</span><h3>Problem Solving</h3><p>When something becomes a recurring headache, we help figure it out.</p><span class="service-more">Explore <b>+</b></span>
+            <span class="service-detail">Troubleshooting · Research · Finding practical solutions · Resourcefulness · Follow-through</span>
+          </button>
         </div>
       </div>
     </section>
@@ -86,50 +111,39 @@
     <section class="approach section" id="approach">
       <div class="container approach-grid">
         <div class="approach-intro reveal">
-          <p class="eyebrow"><span></span> How we help</p>
-          <h2>You stay focused on the <em>business.</em></h2>
-          <p>Our job is not to add another layer of management to your day. It's to remove some of the work already weighing it down.</p>
+          <p class="eyebrow"><span></span> The Aiko approach</p>
+          <h2>Less on your plate. <em>More in your control.</em></h2>
+          <p>You don't need another layer of management. You need someone dependable who can take ownership of the work you hand over.</p>
         </div>
         <div class="steps">
-          <article class="step reveal"><span>01</span><div><h3>Take it off your plate</h3><p>You hand over the routine work that keeps interrupting your real priorities.</p></div></article>
-          <article class="step reveal delay-1"><span>02</span><div><h3>Keep it moving</h3><p>We organize, follow through and communicate so tasks don't sit forgotten in the background.</p></div></article>
-          <article class="step reveal delay-2"><span>03</span><div><h3>Create room to grow</h3><p>You get back time and attention for clients, strategy, creativity and the next stage of the business.</p></div></article>
+          <article class="step reveal"><span>01</span><div><h3>Hand it over</h3><p>Give us the recurring tasks, admin or operational work that keeps pulling your attention away.</p></div></article>
+          <article class="step reveal delay-1"><span>02</span><div><h3>We keep it moving</h3><p>We organize, communicate, follow through and flag what actually needs your attention.</p></div></article>
+          <article class="step reveal delay-2"><span>03</span><div><h3>You get breathing room</h3><p>More time for customers, strategy, creative work and the parts of the business only you can do.</p></div></article>
         </div>
       </div>
     </section>
 
-    <section class="fit section-sm" id="about">
-      <div class="container fit-grid">
-        <div class="fit-card reveal">
-          <p class="eyebrow">Who we support</p>
-          <h2>Built for businesses where <em>you are the business.</em></h2>
-          <p>Aiko works with small business owners and entrepreneurs who are good at what they do but don't need to do every little thing themselves.</p>
-        </div>
-        <div class="industry-list reveal delay-1">
-          <div><span>01</span><b>Hair & Beauty</b><small>Bookings, customer communication, admin</small></div>
-          <div><span>02</span><b>Events & Creative Services</b><small>Coordination, schedules, follow-ups</small></div>
-          <div><span>03</span><b>Service Businesses</b><small>Operations, data, workflows</small></div>
-          <div><span>04</span><b>Entrepreneurs</b><small>Flexible day-to-day business support</small></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="about section">
+    <section class="about section" id="about">
       <div class="container about-grid">
         <div class="about-label reveal"><p class="eyebrow"><span></span> About Aiko</p><span class="big-ap">AP</span></div>
         <div class="about-copy reveal delay-1">
-          <h2>Reliable support for the work <em>behind the scenes.</em></h2>
-          <p>Aiko Professionals is a virtual assistance and business operations support outfit built around a simple idea: business owners should not have to spend their best hours wrestling with routine work.</p>
-          <p>We bring organization, responsiveness and practical problem-solving to the day-to-day details — giving you a dependable extra pair of hands without adding unnecessary complexity.</p>
+          <h2>A dependable extra pair of hands — <em>without the extra noise.</em></h2>
+          <p>Aiko Professionals provides virtual assistance and business operations support for small businesses and entrepreneurs, particularly service-based businesses where the owner is still close to every part of the operation.</p>
+          <div class="about-points">
+            <span>Reliable</span><span>Responsive</span><span>Resourceful</span><span>Practical</span>
+          </div>
           <a class="text-link" href="#contact">Tell us what is taking up your time <span>↗</span></a>
         </div>
       </div>
     </section>
 
-    <section class="cta section" id="contact">
-      <div class="container cta-box reveal">
+    <section class="contact section" id="contact">
+      <div class="container contact-box reveal">
         <div><p class="eyebrow">Ready when you are</p><h2>Let's make your business <em>lighter.</em></h2><p>Tell us what is eating up your time. We'll start there.</p></div>
-        <a class="button button-light" href="mailto:hello@aikoprofessionals.com">Start a conversation <span>↗</span></a>
+        <div class="contact-actions">
+          <a class="contact-link" href="mailto:aikoprofessionals@gmail.com"><span class="contact-icon">@</span><span><small>Email</small><strong>aikoprofessionals@gmail.com</strong></span><b>↗</b></a>
+          <a class="contact-link" href="https://wa.me/2347026865467" target="_blank" rel="noopener"><span class="contact-icon">◉</span><span><small>WhatsApp</small><strong>+234 702 686 5467</strong></span><b>↗</b></a>
+        </div>
       </div>
     </section>
   </main>
